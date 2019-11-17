@@ -15,6 +15,19 @@ import java.nio.DoubleBuffer;
 public final class WhatIsNewInDoubleBuffer
 {
   /**
+   * Example call to new method {@link DoubleBuffer#slice(int, int)}.
+   * @since 13
+   * @see DoubleBuffer#slice(int, int)
+   */
+  public DoubleBuffer slice(int index, int length)
+  {
+    DoubleBuffer testee = $$$();
+
+    DoubleBuffer result = testee.slice(index, length);
+    return result;
+  }
+
+  /**
    * Example call to new method {@link DoubleBuffer#get(int, double[], int, int)}.
    * @since 13
    * @see DoubleBuffer#get(int, double[], int, int)
@@ -63,19 +76,6 @@ public final class WhatIsNewInDoubleBuffer
     DoubleBuffer testee = $$$();
 
     DoubleBuffer result = testee.put(index, src);
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link DoubleBuffer#slice(int, int)}.
-   * @since 13
-   * @see DoubleBuffer#slice(int, int)
-   */
-  public DoubleBuffer slice(int index, int length)
-  {
-    DoubleBuffer testee = $$$();
-
-    DoubleBuffer result = testee.slice(index, length);
     return result;
   }
 

@@ -15,28 +15,15 @@ import java.nio.LongBuffer;
 public final class WhatIsNewInLongBuffer
 {
   /**
-   * Example call to new method {@link LongBuffer#put(int, long[], int, int)}.
+   * Example call to new method {@link LongBuffer#slice(int, int)}.
    * @since 13
-   * @see LongBuffer#put(int, long[], int, int)
+   * @see LongBuffer#slice(int, int)
    */
-  public LongBuffer put(int index, long[] src, int offset, int length)
+  public LongBuffer slice(int index, int length)
   {
     LongBuffer testee = $$$();
 
-    LongBuffer result = testee.put(index, src, offset, length);
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link LongBuffer#put(int, long[])}.
-   * @since 13
-   * @see LongBuffer#put(int, long[])
-   */
-  public LongBuffer put(int index, long[] src)
-  {
-    LongBuffer testee = $$$();
-
-    LongBuffer result = testee.put(index, src);
+    LongBuffer result = testee.slice(index, length);
     return result;
   }
 
@@ -67,15 +54,28 @@ public final class WhatIsNewInLongBuffer
   }
 
   /**
-   * Example call to new method {@link LongBuffer#slice(int, int)}.
+   * Example call to new method {@link LongBuffer#put(int, long[], int, int)}.
    * @since 13
-   * @see LongBuffer#slice(int, int)
+   * @see LongBuffer#put(int, long[], int, int)
    */
-  public LongBuffer slice(int index, int length)
+  public LongBuffer put(int index, long[] src, int offset, int length)
   {
     LongBuffer testee = $$$();
 
-    LongBuffer result = testee.slice(index, length);
+    LongBuffer result = testee.put(index, src, offset, length);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link LongBuffer#put(int, long[])}.
+   * @since 13
+   * @see LongBuffer#put(int, long[])
+   */
+  public LongBuffer put(int index, long[] src)
+  {
+    LongBuffer testee = $$$();
+
+    LongBuffer result = testee.put(index, src);
     return result;
   }
 

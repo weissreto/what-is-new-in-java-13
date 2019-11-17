@@ -14,19 +14,6 @@ package whatisnewin.java.lang;
 public final class WhatIsNewInString
 {
   /**
-   * Example call to new method {@link String#formatted(Object[])}.
-   * @since 13
-   * @see String#formatted(Object[])
-   */
-  public String formatted(Object[] args)
-  {
-    String testee = $$$();
-
-    String result = testee.formatted(args);
-    return result;
-  }
-
-  /**
    * Example call to new method {@link String#stripIndent()}.
    * @since 13
    * @see String#stripIndent()
@@ -49,6 +36,19 @@ public final class WhatIsNewInString
     String testee = $$$();
 
     String result = testee.translateEscapes();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link String#formatted(Object...)}.
+   * @since 13
+   * @see String#formatted(Object...)
+   */
+  public String formatted(Object... args)
+  {
+    String testee = $$$();
+
+    String result = testee.formatted(args);
     return result;
   }
 

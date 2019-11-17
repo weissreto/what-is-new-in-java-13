@@ -15,28 +15,15 @@ import java.nio.ByteBuffer;
 public final class WhatIsNewInByteBuffer
 {
   /**
-   * Example call to new method {@link ByteBuffer#put(int, byte[], int, int)}.
+   * Example call to new method {@link ByteBuffer#slice(int, int)}.
    * @since 13
-   * @see ByteBuffer#put(int, byte[], int, int)
+   * @see ByteBuffer#slice(int, int)
    */
-  public ByteBuffer put(int index, byte[] src, int offset, int length)
+  public ByteBuffer slice(int index, int length)
   {
     ByteBuffer testee = $$$();
 
-    ByteBuffer result = testee.put(index, src, offset, length);
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link ByteBuffer#put(int, byte[])}.
-   * @since 13
-   * @see ByteBuffer#put(int, byte[])
-   */
-  public ByteBuffer put(int index, byte[] src)
-  {
-    ByteBuffer testee = $$$();
-
-    ByteBuffer result = testee.put(index, src);
+    ByteBuffer result = testee.slice(index, length);
     return result;
   }
 
@@ -67,15 +54,28 @@ public final class WhatIsNewInByteBuffer
   }
 
   /**
-   * Example call to new method {@link ByteBuffer#slice(int, int)}.
+   * Example call to new method {@link ByteBuffer#put(int, byte[], int, int)}.
    * @since 13
-   * @see ByteBuffer#slice(int, int)
+   * @see ByteBuffer#put(int, byte[], int, int)
    */
-  public ByteBuffer slice(int index, int length)
+  public ByteBuffer put(int index, byte[] src, int offset, int length)
   {
     ByteBuffer testee = $$$();
 
-    ByteBuffer result = testee.slice(index, length);
+    ByteBuffer result = testee.put(index, src, offset, length);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link ByteBuffer#put(int, byte[])}.
+   * @since 13
+   * @see ByteBuffer#put(int, byte[])
+   */
+  public ByteBuffer put(int index, byte[] src)
+  {
+    ByteBuffer testee = $$$();
+
+    ByteBuffer result = testee.put(index, src);
     return result;
   }
 
