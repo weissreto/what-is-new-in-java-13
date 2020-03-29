@@ -9,7 +9,7 @@ import com.sun.source.tree.Tree.Kind;
  * that were newly introduced in Java version 13.<br>
  *
  * {@link Kind} is an old class but has new fields, constructors or methods.
- * @since UNDEFINED
+ * @since 1.6
  * @see Kind
  */
 public final class WhatIsNewInTree$Kind

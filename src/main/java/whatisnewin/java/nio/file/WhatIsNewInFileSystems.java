@@ -40,4 +40,15 @@ public final class WhatIsNewInFileSystems
     return result;
   }
 
+  /**
+   * Example call to new method {@link FileSystems#newFileSystem(Path, Map, ClassLoader)}.
+   * @since 13
+   * @see FileSystems#newFileSystem(Path, Map, ClassLoader)
+   */
+  public static FileSystem newFileSystem(Path path, Map<String, ?> env, ClassLoader loader) throws IOException
+  {
+    FileSystem result = FileSystems.newFileSystem(path, env, loader);
+    return result;
+  }
+
 }
